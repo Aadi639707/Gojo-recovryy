@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gojo Recovery Lab | Premium Telegram & Digital Assets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: { dark: '#08090C', gojoBlue: '#00C2FF', gojoPurple: '#8B5CF6', gold: '#FFD700' }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hardware Acceleration & Scrolling Fixes */
+        html, body { background-color: #08090C; color: #ffffff; width: 100%; -webkit-font-smoothing: antialiased; overscroll-behavior-x: none; }
+        
+        /* Ultra Premium Glassmorphism */
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.02); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.03); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            transform: translateZ(0); 
+            will-change: transform;
+        }
+        .glass-card:hover { transform: translateY(-5px) translateZ(0); border-color: rgba(0, 194, 255, 0.2); box-shadow: 0 10px 30px rgba(0, 194, 255, 0.1); }
+        
+        /* Text Gradients & Glows */
+        .gradient-text { background: linear-gradient(to right, #00C2FF, #8B5CF6); -webkit-background-clip: text; color: transparent; transform: translateZ(0); }
+        .gradient-gold { background: linear-gradient(to right, #FFD700, #FFA500); -webkit-background-clip: text; color: transparent; transform: translateZ(0); }
+        .text-glow { text-shadow: 0 0 20px rgba(0, 194, 255, 0.4); }
+        
+        /* Custom Animations */
+        @keyframes floatDecorative { 0% { transform: translateY(0px) translateZ(0); } 50% { transform: translateY(-15px) translateZ(0); } 100% { transform: translateY(0px) translateZ(0); } }
+        @keyframes pulse-glow { 0% { opacity: 0.6; box-shadow: 0 0 10px rgba(0,194,255,0.1); } 50% { opacity: 1; box-shadow: 0 0 25px rgba(0,194,255,0.3); } 100% { opacity: 0.6; box-shadow: 0 0 10px rgba(0,194,255,0.1); } }
+        @keyframes typeText { from { width: 0; } to { width: 100%; } }
+        @keyframes blinkCursor { from, to { border-color: transparent; } 50% { border-color: #4ade80; } }
+        
+        .animate-float-decorative { animation: floatDecorative 6s ease-in-out infinite; will-change: transform; }
+        .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+
+        /* Animated Background Orbs */
+        .bg-orb { position: absolute; z-index: -1; pointer-events: none; transform: translateZ(0); will-change: transform; }
+        .orb-1 { top: -5%; left: -5%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(0,194,255,0.15) 0%, rgba(8,9,12,0) 70%); }
+        .orb-2 { bottom: -5%; right: -5%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(139,92,246,0.15) 0%, rgba(8,9,12,0) 70%); }
+
+        /* Typing Effect Container */
+        .typing-container { display: inline-block; overflow: hidden; white-space: nowrap; border-right: 2px solid #4ade80; animation: typeText 3s steps(40, end), blinkCursor 0.75s step-end infinite; transform: translateZ(0); }
+    </style>
+</head>
+<body class="antialiased bg-dark">
+
+    <main class="relative w-full max-w-[100vw] overflow-x-hidden min-h-screen">
+
+        <div class="bg-orb orb-1 animate-float-decorative"></div>
+        <div class="bg-orb orb-2 animate-float-decorative" style="animation-delay: 2s;"></div>
+
+        <div class="absolute top-32 left-4 md:left-10 text-4xl animate-float-decorative opacity-20 pointer-events-none z-0">💎</div>
+        <div class="absolute bottom-40 right-4 md:right-10 text-5xl animate-float-decorative opacity-20 pointer-events-none z-0" style="animation-delay: 3s;">🍿</div>
+
+        <header class="min-h-screen flex flex-col items-center justify-center text-center px-4 relative z-10 pt-10">
+            <div class="inline-block px-5 py-2 rounded-full border border-gojoBlue/30 text-gojoBlue text-sm font-bold mb-8 animate-pulse-glow bg-gojoBlue/5 backdrop-blur-md" style="transform: translateZ(0);">
+                <i class="fas fa-shield-alt mr-2"></i> SYSTEM OPERATIONAL: ALL SERVICES ACTIVE
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tighter leading-tight">
+                Master Your <span class="gradient-text">Digital Assets.</span>
+            </h1>
+            <p class="text-gray-300 max-w-3xl mx-auto mb-12 text-lg md:text-xl font-light leading-relaxed">
+                Gojo Recovery Lab provides elite Telegram restoration, aged account sales, and ultra-affordable premium app subscriptions. Restore control and upgrade your digital lifestyle today.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto px-4 sm:px-0">
+                <a href="#services" class="bg-gradient-to-r from-gojoBlue to-gojoPurple px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-[0_0_20px_rgba(139,92,246,0.3)] text-white text-glow w-full sm:w-auto text-center" style="transform: translateZ(0);">
+                    Explore Services <i class="fas fa-bolt ml-2 animate-bounce inline-block"></i>
+                </a>
+                <a href="#marketplace" class="glass-card px-10 py-5 rounded-full font-bold text-lg text-gold hover:text-white transition-all duration-300 w-full sm:w-auto text-center">
+                    Digital Store <i class="fas fa-shopping-cart ml-2"></i>
+                </a>
+            </div>
+        </header>
+
+        <section class="py-16 border-y border-white/5 bg-white/[0.005] relative z-10">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-5xl md:text-6xl font-extrabold text-gojoBlue text-glow mb-2 tracking-tight"><span class="counter" data-target="1450">0</span>+</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest font-bold">Groups Recovered</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl md:text-6xl font-extrabold text-gojoPurple mb-2 tracking-tight" style="text-shadow: 0 0 20px rgba(139, 92, 246, 0.4);"><span class="counter" data-target="3200">0</span>+</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest font-bold">IDs Unfrozen</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl md:text-6xl font-extrabold text-gold text-glow mb-2 tracking-tight"><span class="counter" data-target="8500">0</span>+</div>
+                    <div class="text-xs text-gray-500 uppercase tracking-widest font-bold">Digital Assets Sold</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="marketplace" class="py-24 max-w-7xl mx-auto px-4 relative z-10">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-center mb-16 tracking-tight">Digital <span class="gradient-gold">Storefront</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-red-500/10 text-red-400 text-xs font-bold px-4 py-2 rounded-bl-2xl">🔥 HIGH DEMAND</div>
+                    <i class="fas fa-users-viewfinder text-5xl text-gold/60 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-2">Aged & Bulk Accounts</h3>
+                    <p class="text-gray-400 text-sm font-light mb-6">High-trust score aged Telegram accounts and fresh bulk virtual numbers. Perfect for critical operations and mass deployments.</p>
+                    <a href="https://t.me/SANATANI_GOJO" target="_blank" class="block text-center w-full bg-white/5 border border-white/10 py-3 rounded-xl hover:bg-gold/20 hover:text-gold transition-colors font-bold">Inquire Pricing <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden border-gojoBlue/20" style="box-shadow: 0 0 20px rgba(0,194,255,0.05);">
+                    <div class="absolute top-0 right-0 bg-gojoBlue/10 text-gojoBlue text-xs font-bold px-4 py-2 rounded-bl-2xl">🍿 BEST SELLER</div>
+                    <i class="fas fa-play-circle text-5xl text-gojoBlue/60 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-2">Premium OTT Access</h3>
+                    <p class="text-gray-400 text-sm font-light mb-6">Affordable, ultra-stable premium subscriptions for Netflix, Prime Video, Hotstar, and Crunchyroll. Skip the heavy bills.</p>
+                    <a href="https://t.me/SANATANI_GOJO" target="_blank" class="block text-center w-full bg-gradient-to-r from-gojoBlue to-blue-600 py-3 rounded-xl text-white font-bold hover:scale-105 transition-transform">Buy Subscription <i class="fas fa-ticket-alt ml-1"></i></a>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl relative overflow-hidden">
+                    <i class="fas fa-key text-5xl text-gojoPurple/60 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-2">Digital Licenses & Keys</h3>
+                    <p class="text-gray-400 text-sm font-light mb-6">100% genuine premium software keys, VPN subscriptions, and exclusive digital assets at wholesale rates. Secure and instant delivery.</p>
+                    <a href="https://t.me/SANATANI_GOJO" target="_blank" class="block text-center w-full bg-white/5 border border-white/10 py-3 rounded-xl hover:bg-gojoPurple/20 hover:text-gojoPurple transition-colors font-bold">View Catalog <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 max-w-5xl mx-auto px-4 relative z-10">
+            <div class="bg-black border border-gray-800 rounded-2xl overflow-hidden shadow-2xl" style="transform: translateZ(0);">
+                <div class="bg-gray-900 px-5 py-3 flex items-center gap-2 border-b border-gray-800">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span class="ml-4 text-xs text-gray-500 font-mono tracking-wider">gojo_system_core.exe</span>
+                </div>
+                <div class="p-6 md:p-8 font-mono text-xs md:text-sm text-green-400 tracking-wide leading-relaxed min-h-[160px] md:min-h-[200px] overflow-hidden">
+                    <p class="typing-container">> Initializing secure network handover...</p><br>
+                    <p class="typing-container" style="animation-delay: 3s; width: 0;">> [STATUS] Bypassing restrictions & generating premium keys...</p><br>
+                    <p class="typing-container" style="animation-delay: 6s; width: 0;">> [INFO] Digital Asset Inventory: SYNCED.</p><br>
+                    <p class="typing-container text-gojoBlue text-glow" style="animation-delay: 9s; width: 0; border-right-color: #00C2FF;">>> READY FOR CLIENT DEPLOYMENT.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 max-w-7xl mx-auto px-4 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 tracking-tight">Core <span class="gradient-text">Expertise</span></h2>
+            <div class="grid md:grid-cols-2 max-w-4xl mx-auto gap-8">
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <i class="fas fa-users-slash text-5xl text-gojoBlue mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Group & Channel Recovery</h3>
+                    <p class="text-gray-400 font-light text-base">Advanced post-ban execution to recover banned, deleted, or hijacked groups and channels. Community reinstatement with minimal data loss.</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <i class="fas fa-user-lock text-5xl text-gojoPurple mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">ID Unfreeze & Unlock</h3>
+                    <p class="text-gray-400 font-light text-base">Deployment of proprietary methods to lift restrictions from limited or specialized Telegram IDs. Restoring your critical access fast.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-extrabold mb-10 tracking-tight">Establish <span class="gradient-text">Connection</span></h2>
+            
+            <div class="flex flex-col gap-6">
+                <a href="https://t.me/SANATANI_GOJO" target="_blank" class="glass-card flex items-center justify-between p-6 rounded-3xl hover:bg-[#0088cc]/10 group">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-[#0088cc] p-4 rounded-2xl text-white group-hover:scale-105 transition-transform"><i class="fab fa-telegram text-3xl"></i></div>
+                        <div class="text-left"><p class="font-bold text-xl md:text-2xl tracking-tight">Telegram Support</p><p class="text-sm text-gojoBlue">@SANATANI_GOJO</p></div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-500"></i>
+                </a>
+
+                <a href="https://github.com/Aadi639707" target="_blank" class="glass-card flex items-center justify-between p-6 rounded-3xl hover:bg-gray-700/30 group">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-gray-800 p-4 rounded-2xl text-white group-hover:scale-105 transition-transform"><i class="fab fa-github text-3xl"></i></div>
+                        <div class="text-left"><p class="font-bold text-xl md:text-2xl tracking-tight">GitHub Profile</p><p class="text-sm text-gray-400">Aadi639707</p></div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-500"></i>
+                </a>
+
+                <div class="glass-card flex items-center justify-between p-6 rounded-3xl opacity-60 cursor-not-allowed">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-gray-800/50 p-4 rounded-2xl text-green-500"><i class="fab fa-whatsapp text-3xl"></i></div>
+                        <div class="text-left">
+                            <p class="font-bold text-xl md:text-2xl tracking-tight text-gray-400">WhatsApp Support</p>
+                            <p class="text-sm text-green-400">Coming Soon</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-lock text-gray-500"></i>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-10 text-center border-t border-white/5 text-gray-500 text-sm font-light relative z-10 bg-black/30 backdrop-blur-md">
+            <p>© 2026 Gojo Recovery Lab. Crafted with absolute precision by <span class="text-gojoBlue font-semibold">Aadi639707</span>.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 40; 
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 30);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                setTimeout(updateCount, 800); 
+            });
+        });
+    </script>
+</body>
+        </html>
+        
