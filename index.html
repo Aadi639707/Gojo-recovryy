@@ -295,4 +295,54 @@
                 </a>
                 <div class="premium-card opacity-50 flex items-center justify-between p-5 rounded-2xl">
                     <div class="flex items-center gap-4">
-        
+                        <i class="fab fa-whatsapp text-3xl text-green-500"></i>
+                        <span class="font-bold text-xl">WhatsApp (Coming Soon)</span>
+                    </div>
+                    <i class="fas fa-lock text-gray-500"></i>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-10 text-center border-t border-white/10 text-gray-500 text-sm">
+            <p>© 2026 Gojo Recovery Lab | Precision by <span class="text-gojoBlue">Aadi639707</span></p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Number Counter Animation
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 40; 
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 40);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                setTimeout(updateCount, 500); 
+            });
+        });
+
+        // OTT List Toggle Logic
+        function toggleOtt() {
+            const list = document.getElementById("ottDropdown");
+            const btn = document.getElementById("toggleListBtn");
+            
+            if (list.classList.contains("hidden")) {
+                list.classList.remove("hidden");
+                btn.style.display = "none";
+            } else {
+                list.classList.add("hidden");
+                btn.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>
